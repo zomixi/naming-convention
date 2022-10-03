@@ -1,0 +1,14 @@
+src/**
+.vscode/**
+.husky/**
+test/**
+
+**/tsconfig.json
+**/.eslintignore
+**/.eslintrc.json
+**/.prettierignore
+**/.prettierrc.json
+**/.lintstagedrc.json
+**/commitlint.config
+
+.gitignore
