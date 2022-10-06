@@ -1,7 +1,7 @@
 {
   "name": "naming-convention",
   "displayName": "Naming Convention",
-  "description": "In computer programming, a naming convention is a set of rules for choosing the character sequence to be used for identifiers which denote variables, types, functions, and other entities in source code and documentation.",
+  "description": "Convert your identifier name by naming convention.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.71.0"
@@ -10,14 +10,50 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:naming-convention.helloWorld"
+    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "naming-convention.helloWorld",
-        "title": "Hello World"
+        "command": "naming-convention.camel-case",
+        "title": "camelCase"
+      },
+      {
+        "command": "naming-convention.pascal-case",
+        "title": "PascalCase"
+      },
+      {
+        "command": "naming-convention.constant-case",
+        "title": "CONSTANT_CASE"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "naming-convention.menus",
+          "when": "editorHasSelection"
+        }
+      ],
+      "naming-convention.menus": [
+        {
+          "command": "naming-convention.camel-case",
+          "group": "naming-convention.group@01"
+        },
+        {
+          "command": "naming-convention.pascal-case",
+          "group": "naming-convention.group@02"
+        },
+        {
+          "command": "naming-convention.constant-case",
+          "group": "naming-convention.group@03"
+        }
+      ]
+    },
+    "submenus": [
+      {
+        "id": "naming-convention.menus",
+        "label": "Naming Convention"
       }
     ]
   },
@@ -48,5 +84,10 @@
     "mocha": "^10.0.0",
     "prettier": "2.7.1",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "camel-case": "^4.1.2",
+    "constant-case": "^3.0.4",
+    "pascal-case": "^3.1.2"
   }
 }
