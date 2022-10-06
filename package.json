@@ -2,7 +2,23 @@
   "name": "naming-convention",
   "displayName": "Naming Convention",
   "description": "Convert your identifier name by naming convention.",
-  "version": "0.0.1",
+  "keywords": [
+    "camel case",
+    "pascal case",
+    "constant case",
+    "change case"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zomixi/naming-convention.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zomixi/naming-convention/issues"
+  },
+  "license": "MIT",
+  "icon": "images/logo.png",
+  "publisher": "zomixi",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.71.0"
   },
@@ -64,7 +80,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts --fix",
-    "test": "node ./out/test/runTest.js"
+    "test": "node ./out/test/runTest.js",
+    "changelog": "standard-changelog"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
@@ -83,6 +100,7 @@
     "lint-staged": "^13.0.3",
     "mocha": "^10.0.0",
     "prettier": "2.7.1",
+    "standard-changelog": "^2.0.27",
     "typescript": "^4.7.4"
   },
   "dependencies": {

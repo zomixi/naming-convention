@@ -2,6 +2,8 @@
 
 Convert your identifier name by naming convention.
 
+![preview](https://raw.githubusercontent.com/zomixi/naming-convention/master/images/example.gif)
+
 ## Install
 
 Launch VS Code Quick Open (Ctrl/Cmd+P), paste the following command, and press enter.
@@ -18,6 +20,4 @@ ext install naming-convention
 
 ## Support
 
-[Create an issue](https://github.com/zomixi/naming-convention/issues).
-
-**Enjoy!**
+[Create an issue](https://github.com/zomixi/naming-convention/issues) & welcome to PR.
