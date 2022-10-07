@@ -18,7 +18,7 @@
   "license": "MIT",
   "icon": "images/logo.png",
   "publisher": "zomixi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.71.0"
   },
