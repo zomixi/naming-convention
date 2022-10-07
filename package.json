@@ -6,7 +6,7 @@
     "camel case",
     "pascal case",
     "constant case",
-    "change case"
+    "snake case"
   ],
   "repository": {
     "type": "git",
@@ -42,6 +42,10 @@
       {
         "command": "naming-convention.constant-case",
         "title": "CONSTANT_CASE"
+      },
+      {
+        "command": "naming-convention.snake-case",
+        "title": "snake_case"
       }
     ],
     "menus": {
@@ -63,6 +67,10 @@
         {
           "command": "naming-convention.constant-case",
           "group": "naming-convention.group@03"
+        },
+        {
+          "command": "naming-convention.snake-case",
+          "group": "naming-convention.group@04"
         }
       ]
     },
@@ -106,6 +114,7 @@
   "dependencies": {
     "camel-case": "^4.1.2",
     "constant-case": "^3.0.4",
-    "pascal-case": "^3.1.2"
+    "pascal-case": "^3.1.2",
+    "snake-case": "^3.0.4"
   }
 }
