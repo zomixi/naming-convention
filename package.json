@@ -2,7 +2,7 @@
   "name": "naming-convention",
   "displayName": "Naming Convention",
   "description": "Convert your identifier name by naming convention.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.71.0"
   },
