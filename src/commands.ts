@@ -1,8 +1,11 @@
-import { camelCase } from "camel-case";
-import { constantCase } from "constant-case";
-import { pascalCase } from "pascal-case";
-import { snakeCase } from "snake-case";
-import { commandBuilder } from "./commandBuilder";
+import { commandBuilder } from "./commandBuilder.js";
+import {
+  camelCase,
+  constantCase,
+  kebabCase,
+  pascalCase,
+  snakeCase,
+} from "./utils.js";
 
 const COMMANDS = [
   {
@@ -20,6 +23,10 @@ const COMMANDS = [
   {
     id: "naming-convention.snake-case",
     callback: commandBuilder(snakeCase),
+  },
+  {
+    id: "naming-convention.kebab-case",
+    callback: commandBuilder(kebabCase),
   },
 ];
 

@@ -6,7 +6,8 @@
     "camel case",
     "pascal case",
     "constant case",
-    "snake case"
+    "snake case",
+    "kebab case"
   ],
   "repository": {
     "type": "git",
@@ -46,6 +47,10 @@
       {
         "command": "naming-convention.snake-case",
         "title": "snake_case"
+      },
+      {
+        "command": "naming-convention.kebab-case",
+        "title": "kebab-case"
       }
     ],
     "menus": {
@@ -71,6 +76,10 @@
         {
           "command": "naming-convention.snake-case",
           "group": "naming-convention.group@04"
+        },
+        {
+          "command": "naming-convention.kebab-case",
+          "group": "naming-convention.group@05"
         }
       ]
     },
@@ -103,11 +112,5 @@
     "prettier": "2.7.1",
     "standard-changelog": "^2.0.27",
     "typescript": "^4.7.4"
-  },
-  "dependencies": {
-    "camel-case": "^4.1.2",
-    "constant-case": "^3.0.4",
-    "pascal-case": "^3.1.2",
-    "snake-case": "^3.0.4"
   }
 }
